@@ -1,0 +1,30 @@
+.Shell {
+  text-align: center;
+}
+
+.Shell-logo {
+  animation: Shell-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.Shell-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.Shell-intro {
+  font-size: large;
+}
+
+#page {
+  margin-top: 60px;
+  padding: 20px;
+  text-align: center;
+}
+
+@keyframes Shell-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}

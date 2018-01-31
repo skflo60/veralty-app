@@ -1,0 +1,8 @@
+.Triangle {
+	display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 16px 16px 16px;
+    border-color: transparent transparent #7DCBD8 transparent;
+}

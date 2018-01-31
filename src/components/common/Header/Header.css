@@ -1,0 +1,25 @@
+.Header {
+    position: relative;
+    top: 0px;
+    width: 100%;
+    height: 200px;
+    background-image: url("../../../../public/bg.jpg");
+    background-size: 100% 100%;
+}
+
+.Header > div > img {
+    margin-top: 10px;
+    margin-left: 20px;
+    width: 170px;
+}
+
+.Header > div {
+	height: 200px;
+	overflow: hidden;
+	text-align: left;
+}
+
+.Header > .Triangle {
+    border-width: 16px 16px 0 16px;
+    border-color: #aad9df transparent transparent transparent;
+}

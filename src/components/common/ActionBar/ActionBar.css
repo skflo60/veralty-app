@@ -1,0 +1,9 @@
+.ActionBar > span {
+    padding: 10px 20px;
+    color: white;
+    font-size: 40px;
+}
+
+.ActionBar > span:active, .ActionBar > span:hover {
+   color: #EEE;
+}
