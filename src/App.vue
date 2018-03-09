@@ -21,11 +21,8 @@
      * Fires when the app has been mounted.
      */
     mounted() {
-      // If the user is authenticated,
       // fetch the data from the API
-      if (this.$store.state.auth.authenticated) {
-        this.$store.dispatch('account/find');
-      }
+      this.$store.dispatch('rooms/find');
     },
   };
 </script>

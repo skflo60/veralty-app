@@ -6,23 +6,12 @@
  */
 
 export default [
-  // Home
-  {
-    path: '/home',
-    name: 'home.index',
-    component: () => import('@/pages/Home/Index'),
 
-    // If the user needs to be authenticated to view this page
-    meta: {
-      auth: true,
-    },
-  },
-
-  // Account
+  // rooms
   {
-    path: '/account',
-    name: 'account.index',
-    component: () => import('@/pages/Account/Index'),
+    path: '/rooms',
+    name: 'rooms.index',
+    component: () => import('@/pages/rooms/Index'),
 
     // If the user needs to be authenticated to view this page.
     meta: {
@@ -30,37 +19,14 @@ export default [
     },
   },
 
-  // Login
-  {
-    path: '/login',
-    name: 'login.index',
-    component: () => import('@/pages/Login/Index'),
-
-    // If the user needs to be a guest to view this page.
-    meta: {
-      guest: true,
-    },
-  },
-
-  // Register
-  {
-    path: '/register',
-    name: 'register.index',
-    component: () => import('@/pages/Register/Index.vue'),
-
-    // If the user needs to be a guest to view this page.
-    meta: {
-      guest: true,
-    },
-  },
-
+  /* Default */
   {
     path: '/',
-    redirect: '/home',
+    redirect: '/rooms',
   },
 
   {
     path: '/*',
-    redirect: '/home',
+    redirect: '/rooms',
   },
 ];

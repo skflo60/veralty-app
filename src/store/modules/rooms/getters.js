@@ -1,9 +1,9 @@
 /* ============
- * Getters for the auth module
+ * Getters for the account module
  * ============
  *
  * The getters that are available on the
- * auth module.
+ * account module.
  */
 
-export default {};
+  export default {};

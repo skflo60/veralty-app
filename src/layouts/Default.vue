@@ -3,9 +3,9 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <router-link
         class="navbar-brand"
-        :to="{ name: 'home.index' }"
+        :to="{ name: 'rooms.index' }"
       >
-        Vue 2 Boilerplate
+        Veralty
       </router-link>
 
       <button
@@ -22,34 +22,17 @@
       >
         <ul class="navbar-nav mr-auto">
           <router-link
-            :to="{ name: 'home.index' }"
+            :to="{ name: 'rooms.index' }"
             active-class="active"
             class="nav-item"
             tag="li"
           >
             <a class="nav-link">
-              Home
-            </a>
-          </router-link>
-          <router-link
-            :to="{ name: 'account.index' }"
-            active-class="active"
-            class="nav-item"
-            tag="li"
-          >
-            <a class="nav-link">
-              Account
+              Rooms
             </a>
           </router-link>
         </ul>
         <span class="navbar-text">
-          <a
-            class="btn btn-light"
-            href="#"
-            @click.prevent="logout"
-          >
-            <i class="fa fa-sign-out"></i>
-          </a>
         </span>
       </div>
     </nav>
@@ -98,12 +81,6 @@
      * The methods that the layout can use.
      */
     methods: {
-      /**
-       * Will log the user out.
-       */
-      logout() {
-        this.$store.dispatch('auth/logout');
-      },
 
       /**
        * Will toggle the menu.

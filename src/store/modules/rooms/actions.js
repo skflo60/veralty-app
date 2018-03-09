@@ -1,17 +1,15 @@
 /* ============
- * Actions for the account module
+ * Actions for the room module
  * ============
  *
  * The actions that are available on the
- * account module.
+ * room module.
  */
-
-import Transformer from '@/transformers/AccountTransformer';
 import * as types from './mutation-types';
 
 export const find = ({ commit }) => {
   /*
-   * Normally you would use a proxy to fetch the account:
+   * Normally you would use a proxy to fetch the room:
    *
    * new Proxy()
    *  .find()
@@ -22,13 +20,13 @@ export const find = ({ commit }) => {
    *    console.log('Request failed...');
    *  });
    */
-  const account = {
+  const rooms = [{
     first_name: 'John',
     last_name: 'Doe',
     email: 'jonh@doe.com',
-  };
+  }];
 
-  commit(types.FIND, Transformer.fetch(account));
+  commit(types.FIND, rooms);
 };
 
 export default {
